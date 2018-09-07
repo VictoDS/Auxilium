@@ -1,0 +1,211 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.vitor.auxilium.ListaOcorrenciaActivity">
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        tools:layout_editor_absoluteY="8dp"
+        tools:layout_editor_absoluteX="8dp"
+        android:scrollbars="vertical">
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="500dp"
+            tools:layout_editor_absoluteY="8dp"
+            tools:layout_editor_absoluteX="8dp">
+
+            <TextView
+                android:id="@+id/textTitulo"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:text="• O que é o Auxilium?"
+                android:textSize="25dp"
+                android:textAlignment="textStart"
+                android:textColor="@color/colorPrimary"
+                app:layout_constraintTop_toTopOf="parent"
+                android:layout_marginTop="7dp"
+                android:layout_marginLeft="8dp"
+                app:layout_constraintLeft_toLeftOf="parent"
+                android:layout_marginRight="8dp"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintHorizontal_bias="0.025"
+                android:layout_marginStart="8dp"
+                android:layout_marginEnd="8dp" />
+
+            <TextView
+                android:id="@+id/textConteudo"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:text="      O aplicativo Auxilium tem como objetivo auxiliar o corpo de bombeiros nas chamadas emergências, utilizando sua localização e suas informações pré-definidas."
+                android:textSize="18dp"
+                android:textAlignment="textStart"
+                android:textColor="@color/colorPrimary"
+                app:layout_constraintTop_toTopOf="parent"
+                android:layout_marginLeft="8dp"
+                app:layout_constraintLeft_toLeftOf="parent"
+                android:layout_marginRight="8dp"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintHorizontal_bias="0.025"
+                android:layout_marginTop="13dp"
+                android:layout_below="@+id/textTitulo"
+                android:layout_alignEnd="@+id/textTitulo" />
+
+            <TextView
+                android:id="@+id/textTitulo2"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:text="• Como faço para poder utilizar o Auxilium?"
+                android:textSize="25dp"
+                android:textAlignment="textStart"
+                android:textColor="@color/colorPrimary"
+                app:layout_constraintTop_toTopOf="parent"
+                android:layout_marginTop="17dp"
+                android:layout_marginLeft="8dp"
+                app:layout_constraintLeft_toLeftOf="parent"
+                android:layout_marginRight="8dp"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintHorizontal_bias="0.025"
+                android:layout_below="@+id/textConteudo"
+                android:layout_alignStart="@+id/textConteudo" />
+
+            <TextView
+                android:id="@+id/textConteudo2"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:text="      Para utilizar o Auxilium é necessário realizar o cadastro com suas informações, e aguardar a liberação ao corpo de bombeiros. Ao entrar no aplicativo pela primeira vez, uma mensagem aparecerá dizendo que você não esta cadastrado no nosso sistema, e você será redirecionado para o nosso formulario de cadastro.
+\n        Esse cadastro se faz importante para que seus dados sejam visualizados pelos bombeiros ao solicitar uma emergência e deve ser realizado, de preferência, ASSIM QUE O APLICATIVO FOR INSTALADO, pois só será possivel informar emergências após a liberação do Corpo de Bombeiros."
+                android:textSize="18dp"
+                android:textAlignment="textStart"
+                android:textColor="@color/colorPrimary"
+                app:layout_constraintTop_toTopOf="parent"
+                android:layout_marginLeft="8dp"
+                app:layout_constraintLeft_toLeftOf="parent"
+                android:layout_marginRight="8dp"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintHorizontal_bias="0.025"
+                android:layout_marginTop="16dp"
+                android:layout_below="@+id/textTitulo2"
+                android:layout_centerHorizontal="true" />
+
+            <TextView
+                android:id="@+id/textTitulo3"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:text="• Uma vez cadastrado, como informo uma ocorrência?"
+                android:textSize="25dp"
+                android:textAlignment="textStart"
+                android:textColor="@color/colorPrimary"
+                app:layout_constraintTop_toTopOf="parent"
+                android:layout_marginTop="17dp"
+                android:layout_marginLeft="8dp"
+                app:layout_constraintLeft_toLeftOf="parent"
+                android:layout_marginRight="8dp"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintHorizontal_bias="0.025"
+                android:layout_below="@+id/textConteudo2"
+                android:layout_alignStart="@+id/textConteudo" />
+
+            <TextView
+                android:id="@+id/textConteudo3"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:text="      Após ser liberado pelos bombeiros o usuário poderá informar uma ocorrência utilizando o botão &quot;REGISTRAR OCORRÊNCIA&quot; e preenchendo os filtros de acordo com a situação. O aplicativo possui filtros pré-definidos, pensados para agilizar o envio do veículo de emergência.
+\n        Após definir os filtros e tocar em &quot;CONCLUIR&quot; o aplicativo irá realizar a ligação aos bombeiros normalmente, e enviara no mesmo instante as informações selecionadas junto as informações do usuário, inclusive sua localização atual no momento da chamada."
+                android:textSize="18dp"
+                android:textAlignment="textStart"
+                android:textColor="@color/colorPrimary"
+                app:layout_constraintTop_toTopOf="parent"
+                android:layout_marginLeft="8dp"
+                app:layout_constraintLeft_toLeftOf="parent"
+                android:layout_marginRight="8dp"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintHorizontal_bias="0.025"
+                android:layout_marginTop="16dp"
+                android:layout_below="@+id/textTitulo3"
+                android:layout_centerHorizontal="true" />
+
+            <TextView
+                android:id="@+id/textTitulo4"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:text="• Possuo uma doença crônica e posso vir a precisar do aplicativo por causa da mesma. Existe algum meio mais rápido de chamar ajuda pelo Auxilium nesses casos?"
+                android:textSize="25dp"
+                android:textAlignment="textStart"
+                android:textColor="@color/colorPrimary"
+                app:layout_constraintTop_toTopOf="parent"
+                android:layout_marginTop="17dp"
+                android:layout_marginLeft="8dp"
+                app:layout_constraintLeft_toLeftOf="parent"
+                android:layout_marginRight="8dp"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintHorizontal_bias="0.025"
+                android:layout_below="@+id/textConteudo3"
+                android:layout_alignStart="@+id/textConteudo" />
+
+            <TextView
+                android:id="@+id/textConteudo4"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:text="      Existe. Caso o usuário tenha algum problema de doença crônico, ele poderá informá-lo no cadastro. Comprovando a mesma aos bombeiros, será liberado para utilização a opção chamada rápida.
+\n        O direito de utilizar esta função é decidido pelo Corpo de Bombeiros e a equipe do Auxilium nada tem a ver com esta decisão.
+\n        O usuário que possuir esta opção terá um botão extra na tela inicial, na cor vermelha, chamado &quot;CHAMADA PRÉ-DEFINIDA: DOENÇA&quot;, onde DOENÇA é substituído pelo nome da doença informada pelo usuário. Quando utilizado, este botão envia a localização do usuário e a descrição da doença, sem passar pelos filtros."
+                android:textSize="18dp"
+                android:textAlignment="textStart"
+                android:textColor="@color/colorPrimary"
+                app:layout_constraintTop_toTopOf="parent"
+                android:layout_marginLeft="8dp"
+                app:layout_constraintLeft_toLeftOf="parent"
+                android:layout_marginRight="8dp"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintHorizontal_bias="0.025"
+                android:layout_marginTop="16dp"
+                android:layout_below="@+id/textTitulo4"
+                android:layout_centerHorizontal="true" />
+
+            <TextView
+                android:id="@+id/textTitulo5"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:text="Aviso Importante"
+                android:textSize="25dp"
+                android:textAlignment="center"
+                android:textColor="@color/colorPrimary"
+                app:layout_constraintTop_toTopOf="parent"
+                android:layout_marginTop="17dp"
+                android:layout_marginLeft="8dp"
+                app:layout_constraintLeft_toLeftOf="parent"
+                android:layout_marginRight="8dp"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintHorizontal_bias="0.025"
+                android:layout_below="@+id/textConteudo4"
+                android:layout_alignStart="@+id/textConteudo" />
+
+            <TextView
+                android:id="@+id/textConteudo5"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:text="      Todas as etapas de verificação das informações pelo corpo de bombeiros visam uma maior confiabilidade na relação entre os usuários e o Corpo de Bombeiros. O Aplicativo visa agilizar o atendimento, não só facilitando o envio das informações como diminuindo as falsas ocorrências (trotes).
+\n        Para benefício daqueles que chamam socorro apenas quando necessário e da organização, as informações fornecidas no cadartro, bem como a localização do indivíduo no momento da chamada podem ser utilizadas para responsabilizar o usuário que aplicar trotes atravéz do aplicativo.
+\n        Lembre-se: trote não é apenas uma brincadeira sem graça, é crime."
+                android:textSize="18dp"
+                android:textAlignment="textStart"
+                android:textColor="@color/colorPrimary"
+                app:layout_constraintTop_toTopOf="parent"
+                android:layout_marginLeft="8dp"
+                app:layout_constraintLeft_toLeftOf="parent"
+                android:layout_marginRight="8dp"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintHorizontal_bias="0.025"
+                android:layout_marginTop="16dp"
+                android:layout_below="@+id/textTitulo5"
+                android:layout_centerHorizontal="true" />
+
+        </RelativeLayout>
+    </ScrollView>
+
+</android.support.constraint.ConstraintLayout>
